@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Worker's Tools</title>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/mixslider.css" />
+<link rel="stylesheet" href="CSS/Tool.css">
+</head>
+
+<body>
+	<div class="containerMain">
+	
+		<div class="info">
+			<div class="logo">
+				<img src="images/Toolstation_logo_Tool_Station.png" width="380" height="180"/>
+			</div>
+			<div class="search">
+				<form>
+					<input type="text" name="search"/>
+					<div class="iconsearch"><img src="Images/Cute-Ball-Search-icon.png" width="32" height="32"/></div>
+				</form>
+			</div>
+			<div class="login">
+				<button onClick="document.getElementById('id01').style.display='block'" style="width: auto">Login</button>
+				<button onClick="document.getElementById('id02').style.display='block'" style="width: auto">Sign Up</button>
+			</div>
+			
+			<div id="id01" class="modal">
+				<form class="modal-content animate" action="#">
+					<div class="imgcontainer">
+						<span onClick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+					</div>
+					<div class="containerLogin">
+						<label for="uname"><b>Username</b></label>
+						<input type="text" placeholder="Enter Username" name="uname" required>
+						
+						<label for="psw"><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+						
+						<button class="login_button" type="submit">Login</button>
+						<label>
+							<input type="checkbox" checked="checked" name="remember">Remember me
+						</label>	
+					<div class="containerLogin" style="background-color: gainsboro" >
+						<button type="button" onClick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+						<span class="psw">Forgot <a href="#">password?</a></span>
+					</div>	
+						
+							
+					</div>
+				</form>
+			</div>
+			
+			<script>
+				var modal=document.getElementById('id01');
+				
+				window.onclick= function(event){
+					if(event.target==modal){
+						modal.style.display = "none";
+					}
+				}
+			</script>
+			
+			
+			<div id="id02" class="modal">
+				<form class="modal-content animate" action="#">
+					<div class="imgcontainer">
+						<span onClick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+					</div>
+					<div class="containerLogin">
+						<label for="uname"><b>Username</b></label>
+						<input type="text" placeholder="Enter Username" name="uname" required>
+						
+						<label for="psw"><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+						
+						<label for="psw"><b>Repeat_Password</b></label>
+						<input type="password" placeholder="Enter Password" name="rpsw" required>
+					</div>
+							
+					<div class="containerLogin" style="background-color: gainsboro" >
+						<button type="button" onClick="document.getElementById('id02').style.display='none'" class="cancelbtnsignup">Cancel</button>
+						<button type="submit"  class="signupbutton">Sign Up</button>
+					</div>	
+						
+				</form>
+			</div>
+			
+			<script>
+				var modal=document.getElementById('id02');
+				
+				window.onclick= function(event){
+					if(event.target==modal){
+						modal.style.display = "none";
+					}
+				}
+			</script>
+			
+		</div>
+		
+		<header>
+		
+		<div class="container">
+<div id="mixedSlider">
+                    <div class="MS-content">
+                        <div class="item">
+                            <div class="imgTitle">
+                                
+                                <img src="Images/application_testing_tools.jpg" alt="" />
+                            </div>
+                            
+                           
+                        </div>
+                        
+                        <div class="item">
+                            <div class="imgTitle">
+                                
+                                <img src="Images/2a.jpg" alt="" />
+                            </div>
+                            
+
+                           
+                        </div>
+                        
+                         <div class="item">
+                            <div class="imgTitle">
+                                
+                                <img src="Images/english_top_slider.00001.00000001.jpg" alt="" />
+                            </div>
+                            
+
+                           
+                        </div>
+                        
+                         <div class="item">
+                            <div class="imgTitle">
+                                
+                                <img src="Images/vintage-angular-banner-v2.jpg" alt="" />
+                            </div>
+                            
+
+                           
+                        </div>
+                        
+                       
+                       
+                       
+                    </div>
+                    <div class="MS-controls">
+                        <button class="MS-left"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                        <button class="MS-right"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                    </div>
+            </div>
+	</div>
+
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/multislider.js"></script> 
+<script>
+
+		$('#mixedSlider').multislider({
+			duration: 700,
+			interval: 7000
+		});
+</script>
+	
+	</header>
+		<nav>
+			<a href="Home.html" target="_blank">Home</a>
+			<a href="About.html" target="_blank">About</a>
+			<a href="Product.html" target="_blank">Product</a>
+			<a href="News.html" target="_blank">News</a>
+			<a href="Contact.html" target="_blank">Contact</a>
+		</nav>
+		
+		<div class="content_product">
+			<article class="contenthome">
+			<div class="product"> 
+				<center>
+					<img src="Images/images (1).jpg">
+					<div class="overlay">
+    					<div class="text">
+    				<p class="title">Husky Tools</p>
+					<p class="price">49.99$</p>
+ 						</div>
+  					</div>
+				</center>
+				  	
+			</div>
+			<div class="product"> 
+				<center>
+					<img src="Images/images (2).jpg">
+					<div class="overlay">
+    					<div class="text">
+    				<p class="title">Power Tools</p>
+					<p class="price">39.99$</p>
+ 						</div>
+  					</div>
+					
+				</center>
+				
+			</div>
+			<div class="product"> 
+				<center>
+					<img src="Images/images.jpg">
+					<div class="overlay">
+    					<div class="text">
+    				<p class="title">Maintenance Tools</p>
+					<p class="price">89.99$</p>
+ 						</div>
+  					</div>
+					
+					
+					<div class="promotion">
+						Sale OFF 20%
+					</div>
+				</center>
+			</div>
+			<div class="product"> 
+				<center>
+					<img src="Images/jtk-12951.01_s500_p1.jpg">
+					<div class="overlay">
+    					<div class="text">
+    				<p class="title">Steel Tools Box</p>
+					<p class="price">119.99$ </p>
+ 						</div>
+  					</div>
+					
+					
+					<div class="promotion">
+						Sale OFF 30%
+					</div>
+				</center>
+			</div>
+			<div class="product"> 
+				<center>
+					<img src="Images/safety-tools-250x250.jpg">
+					<div class="overlay">
+    					<div class="text">
+    				<p class="title">Safety Tools</p>
+					<p class="price">29.99$</p>
+ 						</div>
+  					</div>
+					
+					
+					<div class="promotion">
+						Sale OFF 40%
+					</div>
+				</center>
+			</div>
+			<div class="product"> 
+				<center>
+					<img src="Images/specialized-emt-12-tool-349803-1.jpg">
+					<div class="overlay">
+    					<div class="text">
+    				<p class="title">Tool of The Ride</p>
+					<p class="price">19.99$</p>
+ 						</div>
+  					</div>
+					
+				</center>
+				
+			</div>
+		</article>
+		<aside> 
+	<h2>WORKER'S NEWS</h2>
+	<table class="info_news">
+  <tbody>
+    <tr>
+      <td><img src="Images/news_1.jpg"/></td>
+      <td><p>The Reasons Why We Love Tools.</p></td>
+    </tr>
+    <tr>
+      <td><img src="Images/new_2.png" /></td>
+      <td><p>Safety kits, tools displayed at exhibition.</p></td>
+    </tr>
+    <tr>
+      <td><img src="Images/news_3.jpg"/></td>
+      <td><p>Toolstation has opened another branch in North Staffordshire.</p></td>
+    </tr>
+    <tr>
+      <td><img src="Images/news_4.jpg"/></td>
+      <td><p>WS-3000 Woodworking Tool Sharpener.Cutting Edge Technology for Woodworkers</p></td>
+    </tr>
+    <tr>
+      <td><img src="Images/news_5.jpg"/></td>
+      <td><p>Wood Work Hand Tools : A Position Withwithin The Woodoperating Industry </p></td>
+    </tr>
+    <tr>
+      <td><img src="Images/news_6.jpg"/></td>
+      <td><p>10 Essential Safety Measures For Using Wood Working Tools</p></td>
+    </tr>
+    <tr>
+      <td><img src="Images/news_7.jpg"/></td>
+      <td><p>Best 25+ Leather working tools ideas.</p></td>
+    </tr>
+    <tr>
+      <td><img src="images/ezgif.com-optimize-5.gif" width="80" height="70" /></td>
+      <td><p>Hot deal of the week.</p></td>
+    </tr>
+  	</tbody>
+	</table>
+	</aside>
+		</div>
+
+	<footer>
+	<div class="footer_left">
+		<ul>
+			<h3>Help & Contact</h3>
+			<li>Contact us</li> 
+			<li>FAQ's</li>
+			<li>After Sales Support </li>
+			<li>Click & Collect </li>
+			<li>Delivery</li> 
+			<li>Payment</li> 
+			<li>Buying from us</li> 
+			<li>Trade card</li> 
+		</ul>
+	</div>
+	<div class="footer_center1">
+		<ul>
+			<h3>Company Information</h3>
+			<li>News</li>
+			<li>Modern Slavery Statement</li>
+			<li>Toolstation Football</li> 
+			<li>Our Partners</li>
+			<li>Working for Toolstation</li> 
+			<li>About Toolstation </li>
+			<li>Diversity Reporting</li>
+		</ul>
+	</div>
+	<div class="footer_center2">
+		<ul>
+			<h3>Policies</h3>
+			<li>Terms of Business </li>
+			<li>Privacy </li>
+			<li>Cookies </li>	
+			<li>WEEE</li> 
+			<li>Carrier bags </li>
+		</ul>
+	</div>
+	<div class="footer_right">
+	  <img src="Images/google_plus1600.png" width="32px" height="32px"/>
+	  <img src="Images/utube.png" width="32px" height="32px"/>
+	  <img src="Images/697029-twitter-512.png" width="32px" height="32px"/>
+	  <img src="Images/facebook_icon__by_gawrifort-d5qalzh.png" width="32px" height="32px"/>
+	</div>
+	</footer>
+
+	</div>
+</body>
+</html>

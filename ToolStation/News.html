@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Worker's Tools</title>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/mixslider.css" />
+<link rel="stylesheet" href="CSS/Tool.css">
+</head>
+
+<body>
+	<div class="containerMain">
+	
+		<div class="info">
+			<div class="logo">
+				<img src="images/Toolstation_logo_Tool_Station.png" width="380" height="180"/>
+			</div>
+			<div class="search">
+				<form>
+					<input type="text" name="search"/>
+					<div class="iconsearch"><img src="Images/Cute-Ball-Search-icon.png" width="32" height="32"/></div>
+				</form>
+			</div>
+			
+			
+			<div class="login">
+				<button onClick="document.getElementById('id01').style.display='block'" style="width: auto">Login</button>
+				<button onClick="document.getElementById('id02').style.display='block'" style="width: auto">Sign Up</button>
+			</div>
+			
+			<div id="id01" class="modal">
+				<form class="modal-content animate" action="#">
+					<div class="imgcontainer">
+						<span onClick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+					</div>
+					<div class="containerLogin">
+						<label for="uname"><b>Username</b></label>
+						<input type="text" placeholder="Enter Username" name="uname" required>
+						
+						<label for="psw"><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+						
+						<button class="login_button" type="submit">Login</button>
+						<label>
+							<input type="checkbox" checked="checked" name="remember">Remember me
+						</label>	
+					<div class="containerLogin" style="background-color: gainsboro" >
+						<button type="button" onClick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+						<span class="psw">Forgot <a href="#">password?</a></span>
+					</div>	
+						
+							
+					</div>
+				</form>
+			</div>
+			
+			<script>
+				var modal=document.getElementById('id01');
+				
+				window.onclick= function(event){
+					if(event.target==modal){
+						modal.style.display = "none";
+					}
+				}
+			</script>
+			
+			
+			<div id="id02" class="modal">
+				<form class="modal-content animate" action="#">
+					<div class="imgcontainer">
+						<span onClick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+					</div>
+					<div class="containerLogin">
+						<label for="uname"><b>Username</b></label>
+						<input type="text" placeholder="Enter Username" name="uname" required>
+						
+						<label for="psw"><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+						
+						<label for="psw"><b>Repeat_Password</b></label>
+						<input type="password" placeholder="Enter Password" name="rpsw" required>
+					</div>
+							
+					<div class="containerLogin" style="background-color: gainsboro" >
+						<button type="button" onClick="document.getElementById('id02').style.display='none'" class="cancelbtnsignup">Cancel</button>
+						<button type="submit"  class="signupbutton">Sign Up</button>
+					</div>	
+						
+				</form>
+			</div>
+			
+			<script>
+				var modal=document.getElementById('id02');
+				
+				window.onclick= function(event){
+					if(event.target==modal){
+						modal.style.display = "none";
+					}
+				}
+			</script>
+		</div>
+		
+		<header>
+		
+		<div class="container">
+<div id="mixedSlider">
+                    <div class="MS-content">
+                        <div class="item">
+                            <div class="imgTitle">
+                                
+                                <img src="Images/application_testing_tools.jpg" alt="" />
+                            </div>
+                            
+                           
+                        </div>
+                        
+                        <div class="item">
+                            <div class="imgTitle">
+                                
+                                <img src="Images/2a.jpg" alt="" />
+                            </div>
+                            
+
+                           
+                        </div>
+                        
+                         <div class="item">
+                            <div class="imgTitle">
+                                
+                                <img src="Images/english_top_slider.00001.00000001.jpg" alt="" />
+                            </div>
+                            
+
+                           
+                        </div>
+                        
+                         <div class="item">
+                            <div class="imgTitle">
+                                
+                                <img src="Images/vintage-angular-banner-v2.jpg" alt="" />
+                            </div>
+                            
+
+                           
+                        </div>
+                        
+                       
+                       
+                    </div>
+                    <div class="MS-controls">
+                        <button class="MS-left"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                        <button class="MS-right"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+                    </div>
+            </div>
+	</div>
+
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/multislider.js"></script> 
+<script>
+
+		$('#mixedSlider').multislider({
+			duration: 700,
+			interval: 7000
+		});
+</script>
+	
+	</header>
+		<nav>
+			<a href="Home.html" target="_blank">Home</a>
+			<a href="About.html" target="_blank">About</a>
+			<a href="Product.html" target="_blank">Product</a>
+			<a href="News.html" target="_blank">News</a>
+			<a href="Contact.html" target="_blank">Contact</a>
+		</nav>
+		
+		<div class="news">
+			<h1>
+				Southampton Bitterne Relocation 
+			</h1>
+			<p>
+			  	.   Toolstation Southampton Bitterne will open for business on Monday 14th January. The latest branch is located at Unit H, Centurion Park, Bitterne Road West, Bitterne, Southampton. SO18 1UB
+			</p>
+			<p>
+				.   This is a relocation from the Southampton West Quay Road branch.
+			</p>
+			<center>
+				<img src="Images/New-branch-Coming-Soon-Southampton1.jpg" width="500px" height="500px;"/>
+			</center>
+			
+			<h1>
+				Welcome Promo 
+			</h1>
+			<p>
+				£5 Off £40 Spend Promo Code – TSSAVE5<br>
+				1. Minimum £40 spend applies<br>
+				2. Redeemable online, in branch or over the phone<br>
+				3. One redemption per customer<br>
+				4. Non-transferrable<br>
+				5. Promo Code valid from the 28th December 2018 until 23:59 4th January 2019<br>
+				6. Not to be used with staff discount<br>
+				7. No cash alternative<br>
+			</p>
+			<center>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/9uSKI-iuBW4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+			</center>
+		</div>
+		
+	<footer>
+	<div class="footer_left">
+		<ul>
+			<h3>Help & Contact</h3>
+			<li>Contact us</li> 
+			<li>FAQ's</li>
+			<li>After Sales Support </li>
+			<li>Click & Collect </li>
+			<li>Delivery</li> 
+			<li>Payment</li> 
+			<li>Buying from us</li> 
+			<li>Trade card</li> 
+		</ul>
+	</div>
+	<div class="footer_center1">
+		<ul>
+			<h3>Company Information</h3>
+			<li>News</li>
+			<li>Modern Slavery Statement</li>
+			<li>Toolstation Football</li> 
+			<li>Our Partners</li>
+			<li>Working for Toolstation</li> 
+			<li>About Toolstation </li>
+			<li>Diversity Reporting</li>
+		</ul>
+	</div>
+	<div class="footer_center2">
+		<ul>
+			<h3>Policies</h3>
+			<li>Terms of Business </li>
+			<li>Privacy </li>
+			<li>Cookies </li>	
+			<li>WEEE</li> 
+			<li>Carrier bags </li>
+		</ul>
+	</div>	
+	<div class="footer_right">
+	  <img src="Images/google_plus1600.png" width="32px" height="32px"/>
+	  <img src="Images/utube.png" width="32px" height="32px"/>
+	  <img src="Images/697029-twitter-512.png" width="32px" height="32px"/>
+	  <img src="Images/facebook_icon__by_gawrifort-d5qalzh.png" width="32px" height="32px"/>
+	</div>
+	</footer>
+
+	</div>
+</body>
+</html>
